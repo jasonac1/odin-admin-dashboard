@@ -1,5 +1,42 @@
-div {
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+/* project properties */
+:root {
+    --header-bg-color: white;
+    --aside-bg-color: #1992D4;
+    --main-bg-color: #E0E6EE;
+}
+
+/* project styles */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: var(--header-bg-color);
+}
+
+aside {
+    background-color: var(--aside-bg-color);
+    grid-row: 1 / span 2;
+}
+
+main {
+    background-color: var(--main-bg-color);
 }
