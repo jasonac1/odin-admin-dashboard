@@ -16,6 +16,8 @@
     --header-bg-color: white;
     --aside-bg-color: #1992D4;
     --main-bg-color: #E0E6EE;
+
+    --light-text-color: var(--header-bg-color);
 }
 
 /* project styles */
@@ -34,7 +36,26 @@ header {
 
 aside {
     background-color: var(--aside-bg-color);
+    color: var(--light-text-color);
+
+    display: grid;
+    gap: 4rem;
     grid-row: 1 / span 2;
+    grid-template-rows: repeat(3, min-content);
+
+    padding: 1rem;
+}
+
+nav ul {
+    display: grid;
+    gap: 1rem;
+    padding: 0;
+
+    & li {
+        font-size: 1.5rem;
+        font-weight: bold;
+        list-style: none;
+    }
 }
 
 main {
