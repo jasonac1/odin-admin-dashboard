@@ -99,4 +99,33 @@ nav ul {
 
 main {
     background-color: var(--main-bg-color);
+    
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 3fr 1fr;
+
+    padding: 2rem 2rem;
+    padding-bottom: 6rem;
+}   
+
+.project {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+
+    & h1 {
+        grid-column: 1 / -1;
+    }
+}
+
+.announcement-trending {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: min-content 1fr min-content 1fr;
+}
+
+.card {
+    background-color: var(--header-bg-color);
+    border: 1px solid black;
 }
