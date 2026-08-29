@@ -88,12 +88,38 @@ aside {
     grid-row: 1 / span 2;
     grid-template-rows: repeat(3, min-content);
 
-    padding: 1rem;
+    padding: 2rem;
+
+    h1, li  {
+        display: flex;
+        align-items: center;
+
+        svg {
+            fill: var(--light-text-color);
+        }
+    }
+
+    h1 {
+        gap: 10px;
+        
+        svg {
+            height: 4rem;
+        }
+    }    
+
+    & li {
+        gap: calc(10px + 1rem);
+        padding-left: 1rem;
+
+        svg {
+            height: 2rem;
+        }
+    }
 }
 
 nav ul {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0;
 
     & li {
