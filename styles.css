@@ -20,6 +20,8 @@
 
     --light-text-color: var(--header-bg-color);
     --dark-text-color: #222222;
+    --gray-text-color: #636363;
+    
 }
 
 /* project styles */
@@ -234,5 +236,78 @@ main {
 
 .card {
     background-color: var(--header-bg-color);
-    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+}
+
+.orange {
+    background-color: var(--pfp-bg-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-main {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    padding: 1.5rem;
+
+    p {
+        color: var(--gray-text-color);
+    }
+}
+
+.project-options {
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    justify-items: end;
+
+    svg {
+        height: auto;
+        width: 1.5rem;
+    }
+}
+
+.announcement-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    font-size: 0.7rem;
+
+    padding: 1rem 2rem;
+
+    p {
+        color: var(--gray-text-color);
+    }
+}
+
+.announcement-card > * {
+    align-items: center;
+    display: grid;
+}
+
+.announcement + .announcement {
+    border-top: 1px solid #d3d3d3;
+}
+
+.trending-card {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 2rem;
+    /* align-items: center; */
+
+    .pfp {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    p + p {
+        color: var(--gray-text-color);
+    }
 }
