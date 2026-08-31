@@ -17,3 +17,4 @@ View it live [here](https://jasonac1.github.io/odin-admin-dashboard/)
 ### Credits
 - Icons from [MDI](https://pictogrammers.com/library/mdi/)
 - [Cat PFP](https://pixabay.com/illustrations/cat-kitten-ball-pet-feline-4475583/) by [LimoncitoSketching](https://pixabay.com/users/limoncitosketching-7400657/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4475583)
+- [Roboto](https://fonts.google.com/specimen/Roboto) font by Google
