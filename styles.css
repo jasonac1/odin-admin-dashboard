@@ -16,6 +16,7 @@
     --header-bg-color: white;
     --aside-bg-color: #1992D4;
     --main-bg-color: #E0E6EE;
+    --pfp-bg-color: #FACC15;
 
     --light-text-color: var(--header-bg-color);
     --dark-text-color: #222222;
@@ -42,11 +43,15 @@ header {
     color: var(--dark-text-color);
 
     display: grid;
+    row-gap: 1.5rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
 
     & > div {
+        align-items: center;
         display: grid;
         grid-auto-flow: column;
-        height: 50px;
 
         &
         :nth-child(1),
@@ -64,19 +69,89 @@ header {
     }
 
     & > div:first-child {
-        grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+        gap: 2rem;
+        grid-template-columns: min-content 1fr min-content min-content min-content;
+
+        .pfp {
+            height: 4rem;
+            width: 4rem;
+        }
+
     }
 
     & > div:nth-child(2) {
-        grid-template-columns: 15fr 40fr 15fr 15fr 15fr;
+        gap: 2rem;
+        grid-template-columns: min-content 1fr min-content min-content min-content;
+        
+        .pfp {
+            height: 6rem;
+            width: 6rem;
+        }
     }
 
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
+
+    svg {
+        fill: var(--dark-text-color);
+        height: 2rem;
+    }
+
+    p {
+        text-wrap: nowrap;
+    }
+}
+
+div.search-icon, div.bell-icon {
+    height: 2rem;
+    width: 2rem;
+} 
+
+.pfp {
+    background-color: var(--pfp-bg-color);
+    border-radius: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    place-self: center;
+    height: 65%;
+    width: auto;
 }
 
 input {
-    width: 70%;
+    background-color: var(--main-bg-color);
+    border: none;
+    border-radius: 24px;
+    outline: none;
+
+    font-size: 1rem;
+    text-indent: 1rem;
+
+    width: 80%;
     height: 70%;
+}
+
+.greeting {
+    line-height: 1.5;
+
+    span {
+        font-size: 1rem;
+    }
+}
+
+button {
+    background-color: var(--aside-bg-color);
+    border: none;
+    border-radius: 32px;
+    color: var(--light-text-color);
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 7.5rem;
 }
 
 aside {
