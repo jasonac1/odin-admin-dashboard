@@ -21,7 +21,8 @@
     --light-text-color: var(--header-bg-color);
     --dark-text-color: #222222;
     --gray-text-color: #636363;
-    
+
+    --light-gray-color: #d3d3d3;
 }
 
 /* project styles */
@@ -49,6 +50,9 @@ header {
 
     font-size: 1.5rem;
     font-weight: bold;
+
+    box-shadow: 0 4px 4px var(--light-gray-color);
+    z-index: 1; 
 
     & > div {
         align-items: center;
@@ -237,6 +241,9 @@ main {
 .card {
     background-color: var(--header-bg-color);
     border-radius: 10px;
+
+    box-shadow: 4px 4px 4px var(--light-gray-color);
+    
     display: grid;
     grid-template-columns: 10px 1fr;
 }
