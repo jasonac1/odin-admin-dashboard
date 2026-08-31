@@ -243,7 +243,7 @@ main {
     border-radius: 10px;
 
     box-shadow: 4px 4px 4px var(--light-gray-color);
-    
+
     display: grid;
     grid-template-columns: 10px 1fr;
 }
@@ -307,7 +307,6 @@ main {
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(3, 1fr);
     padding: 2rem;
-    /* align-items: center; */
 
     .pfp {
         height: 3rem;
